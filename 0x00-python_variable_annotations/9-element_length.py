@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""this function’s as a parameters and return values with the appropriate types"""
-
-import typing
+"""this function’s parameters and return values with the appropriate types"""
 from typing import Iterable, Sequence, List, Tuple
 
 
