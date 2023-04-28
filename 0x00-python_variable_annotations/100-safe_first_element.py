@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""Augmentation of the following code with the correct duck-typed annotations"""
-from typing import Any, Union, Sequence
+
+"""
+This module provides  `safe_first_element` function
+"""
+
+import typing
 
 
-def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    """types the elements of the input are not know"""
+def safe_first_element(lst: typing.Sequence[typing.Any])\
+                        -> typing.Union[typing.Any, None]:
+    """
+    This function returns the first element of
+    the input if it exists otherwise None
+    """
     if lst:
-    
         return lst[0]
-    
     else:
         return None
